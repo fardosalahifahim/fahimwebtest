@@ -1,0 +1,432 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 100vh;
+    background: #e7e5e3; 
+}
+.box
+{
+    position: relative;
+    width: 25rem;
+    height: 28.125rem;
+    background: #0957e700;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+.header{
+    position: relative;
+    width: 43.75rem;
+    height: 0rem;
+}
+.header h1{
+    text-align: left;
+    font-size: 5rem;
+    color: #f13809;
+}
+.title-box
+{
+    
+    width: .0625rem;
+    height: 0rem;
+}
+.title-box img
+{
+    width: .1875rem;
+    margin-bottom: -.625rem;
+}
+.title-box p {
+    height: .0625rem;
+    width: 18.75rem;
+    color: #000;
+    font-size: 1.19rme;
+    font-weight: .0625rem;
+    line-height: 1.88rem;
+}
+
+form
+{
+    position: absolute;
+    inset: .0625rem;
+    width: 23.125rem;
+    height: 49.75rem;
+    border-radius: 2.5rem 2.5rem;
+    background: #f9f9fa;
+    z-index: 10;
+    padding: .625rem 10%;
+    display: flex;
+    flex-direction: column;
+}
+.box h1{
+    text-align: center;
+    color: #f83b0b;
+}
+.box h2
+{
+    color: #8d14f0;
+    font-size: 2.07rem;
+    font-weight: 31.25rem;
+    text-align: left;
+}
+.inputBox-gender{
+    position: relative;
+    width: 18.75rem;
+    margin-top: 2.1875rem;
+}
+.inputBox-gender i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: .125rem;
+    background: #f13709;
+    border-radius: .25rem;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox-gender span{
+    position: absolute;
+    left: 0;
+    padding: .88rem .625rem .625rem;
+    font-size: 1em;
+    color: #8d8d8d;
+    pointer-events: none;
+    letter-spacing: 0.5s;
+    color: #1817178e;
+   
+}
+.inputBox-gender select{
+    width: 100%;
+    height: 2.5rem;
+    padding: .625rem 4.375rem .0625rem;
+    font-size: 1.19rem;
+    position: relative;
+    width: 17.25rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #f56a2a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    
+   
+}
+.inputBox
+{
+    position: relative;
+    width: 18.75rem;
+    margin-top: 2.1875rem;
+
+}
+.inputBox input
+{
+    position: relative;
+    width: 100%;
+    padding: 1.25rem .625rem .625rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+input[type="submit"]
+{
+    font-size: 1.40rem;
+    border: none;
+    outline: none;
+    background:#ff6f0f;
+    padding: 5px;
+    margin-top: 2.5rem;
+    border-radius: 5.625rem;
+    font-weight: 37.5rem;
+    cursor: pointer;
+}
+input[type="submit"]:active
+{
+    background: linear-gradient(90deg,#f13809,#bc0ae9);
+    opacity: 0.8;
+}
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 1.25rem .625rem .625rem;
+    font-size: 1em;
+    color: #8d8d8d;
+    pointer-events: none;
+    letter-spacing: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: #f56f16;
+    transform: translateX(-.625rem) translateY(-30px);
+    font-size: 0.75em; 
+}
+.inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: .125rem;
+    background: #f13709;
+    border-radius: .25rem;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.links
+{
+    display: flex;
+    justify-content: right;
+}
+
+.links a
+{
+    width: 3.125rem;
+    color: #fc00c5;
+    font-size: 1em;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2)
+{
+    text-align: right;
+    width: 6.25rem;
+    color: #000000;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    background:#cf0fff;
+    padding: .625rem;    
+    border-radius: 2.5rem;
+    background: linear-gradient(90deg,#0975f1,#bc0ae9);
+    opacity: 0.8;
+
+}
+.links p {
+    font-size: .125rem;
+    width: 18.75rem;
+    margin: 1.88rem ;
+    color: #ff4800;
+    font-size: 1em;
+}
+
+
+
+
+
+
+/*==============Responsive===================*/
+
+@media only screen and (max-width: 768px){
+
+        
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins" , sans-serif;
+    }
+    body
+    {
+        align-items: center;
+        /* background-image: url("/Assets/images/bag\ \(1\).jpg"); */
+        background: linear-gradient(30deg, #cf0fff,#f13809, #f9f9fa, #0975f1 );
+        height: 5.066rem;
+        min-height: 253vw;
+        justify-content: top ;
+        display: flex;
+    }
+    .box
+    {
+        height: 40rem;
+        position: relative;
+        width: 60;
+        background: #df600c00;
+        
+    }
+     h1{
+        color: #f73e10;
+       
+    }
+    .header{
+        position: relative;
+        width: 60;
+        
+    }
+    .header h1{
+        text-align: center;
+        font-size: 5rem;
+        color: #f13809;
+    } 
+    form
+    {
+        position: absolute;
+        inset: .0623rem;
+        width: 60vw;
+        height: 20.88rem;
+        border-radius: 3.125rem 3.125rem;
+        background: #f3dcdc00;
+        z-index: 10;
+        padding: 1.875rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    h2
+    {
+        color: #f56f16;
+        font-size: 40vw;
+        font-weight: 31.25rem;
+        text-align: left;
+    }
+    .inputBox
+    {
+        position: relative;
+        width: 60vw;
+        margin-top: 2.125rem;
+    
+    }
+    .inputBox-gender{
+        position: relative;
+        width: 3vw;
+        margin-top: 2.1875rem;
+    }
+    .inputBox-gender i
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60vw;
+        height: .125rem;
+        background: #f13709;
+        border-radius: .25rem;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+    .inputBox-gender span{
+        position: absolute;
+        left: 0;
+        padding: 14px .625rem .625rem;
+        font-size: 1rem;
+        color: #6d6c6c;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+        color: #000000ec;
+       
+    }
+    .inputBox-gender select{
+        width: 60vw;
+        height: 5vh;
+        padding: .625rem 70px .0625rem;
+        font-size: 1.19rem;
+        position: relative;
+        width: 60vw;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #0f0f0f;
+        font-size: 4vw;
+        letter-spacing: 0.05em;
+        z-index: 10;
+        
+       
+    }
+    .inputBox input
+    {
+        position: relative;
+        width: 60vw;
+        padding: 1.25rem .625rem .625rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #23242a;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+        z-index: 10;
+    }
+    input[type="submit"]
+    {
+        font-size: 7vw;
+        border: none;
+        outline: none;
+        background:#ff6f0f;
+        padding: .32rem;
+        margin-top: 3.125rem;
+        border-radius: 6.625rem;
+        font-weight: 500vw;
+        cursor: pointer;
+    }
+    input[type="submit"]:active
+    {
+        background: linear-gradient(90deg,#f13809,#bc0ae9);
+        opacity: 0.8;
+    }
+    .inputBox span
+    {
+        position: absolute;
+        left: 0;
+        padding: 1.25rem .625rem .625rem;
+        font-size: 1em;
+        color: #222121;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+    }
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span
+    {
+        color: #f56f16;
+        transform: translateX(-.625rem) translateY(-1.875rem);
+        font-size: 0.75em; 
+    }
+    .inputBox i
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60vw;
+        height: .30vh;
+        background: #f13709;
+        border-radius: .25rem;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+    .links
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .links a
+    {
+        width: 60%;
+        margin: 1.875rem 0;
+        font-size: 1em;
+        color: #0f0e0e;
+        text-decoration: #7e7c7c;
+    }
+    .links a:hover,
+    .links a:nth-child(2)
+    {
+        color: #f13709;
+    }
+    .links p{
+        height: 1vh;
+        width: 140vw;
+    }
+}
