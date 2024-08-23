@@ -50,7 +50,6 @@ body
     font-weight: 1px;
     line-height: 30px;
 }
-
 form
 {
     position: absolute;
@@ -173,6 +172,11 @@ input[type="submit"]:active
     color: #8f8f8f;
     text-decoration: #8f8f8f;
 }
+.links2 a:hover,
+        .links2 a:nth-child(2)
+        {
+            color: #f13709;
+        }
 
 /*----------------------Responsive--------------------------------*/
     
@@ -199,9 +203,12 @@ input[type="submit"]:active
        
         .box
         {
+            justify-content: center;
+            display: flex;
             height: 29.4rem;
             position: relative;
-            width: 21.75rem;
+            width: 67vw;
+
             background: #38353300; 
         }
         .header{
@@ -232,9 +239,8 @@ input[type="submit"]:active
             color: #000;
             font-size: 1.19rem;
             font-weight: 1vw;
-           line-height: 1.88rem; 
+           line-height: .98rem; 
         }
-        
         form
         {
             position: absolute;
@@ -260,7 +266,7 @@ input[type="submit"]:active
         .inputBox
         {
             position: relative;
-            width: 80vw;
+            width: 50vw;
             margin-top: 2.125rem;
         
         }
@@ -334,17 +340,9 @@ input[type="submit"]:active
             display: flex;
             justify-content: space-between;
         }
-        /*------------------------------------------------------------*/
         .links a
-        {
+        {            margin: 1rem;
             font-size: 0.9rem;
-            border: none;
-            outline: none;
-            padding: .32rem;
-            margin-top: .5rem;
-            border-radius: 6.625rem;
-            font-weight: 37.5vw;
-            cursor: pointer;
             color: #8f8f8f;
             text-decoration: #8f8f8f;
         }
@@ -363,6 +361,11 @@ input[type="submit"]:active
             font-size: 0.9rem;
             color: #8f8f8f;
             text-decoration: #8f8f8f;
+        }
+        .links2 a:hover,
+        .links2 a:nth-child(2)
+        {
+            color: #f13709;
         }
         
     }
@@ -412,7 +415,7 @@ input[type="submit"]:active
     .title-box
     {
         
-        width: 1vw;
+        width: 1rem;
         height: 0rem;
     }
     .title-box img
@@ -421,11 +424,12 @@ input[type="submit"]:active
         margin-bottom: -.625rem;
     }
     .title-box p {
+        width: 7rem;
         height: .0623rem;
         color: #000;
-        font-size: 1.19rem;
-        font-weight: 1vw;
-       line-height: 1.88rem; 
+        font-size: .7rem;
+        line-height: .7rem; 
+
     }
     
     form
@@ -529,10 +533,8 @@ input[type="submit"]:active
 }
 .links a
 {
-    width: 150px;
-    margin: 30px 0;
-    margin-left: 4.5rem;
-    font-size: 1em;
+    margin: 1rem;
+    font-size: 0.9rem;
     color: #8f8f8f;
     text-decoration: #8f8f8f;
 }
@@ -554,7 +556,7 @@ input[type="submit"]:active
 }
 }
 
-    /*=====================responsive==280===Fold=====================*
+    /*=====================responsive==280===Fold=====================*/
     @media only screen and (max-width: 280px){
         .header{
             position: relative;
