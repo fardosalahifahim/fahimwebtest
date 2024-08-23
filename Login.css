@@ -28,7 +28,7 @@ body
 }
 .header h1{
     text-align: center;
-    font-size: 39px;
+    font-size: 3rem;
     color: #f13809;
 }
 .title-box
@@ -76,7 +76,6 @@ h2
     position: relative;
     width: 300px;
     margin-top: 35px;
-
 }
 .inputBox input
 {
@@ -90,6 +89,10 @@ h2
     font-size: 1em;
     letter-spacing: 0.05em;
     z-index: 10;
+}
+input[type="submit"]:hover{
+        background: linear-gradient(90deg,#f13809,#bc0ae9);
+        opacity: 0.8;
 }
 input[type="submit"]
 {
@@ -107,6 +110,8 @@ input[type="submit"]:active
 {
     background: linear-gradient(90deg,#f13809,#bc0ae9);
     opacity: 0.8;
+   
+
 }
 .inputBox span
 {
@@ -130,10 +135,10 @@ input[type="submit"]:active
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 90%;
-    height: 2px;
+    width: 95%;
+    height: .125rem;
     background: #f13709;
-    border-radius: 4px;
+    border-radius: .125rem;
     transition: 0.5s;
     pointer-events: none;
     z-index: 9;
@@ -143,7 +148,6 @@ input[type="submit"]:active
     display: flex;
     justify-content: space-between;
 }
-
 .links a
 {
     width: 150px;
@@ -158,7 +162,7 @@ input[type="submit"]:active
     color: #f13709;
 }
 
-/*------------------------------------------------------*/
+/*----------------------Responsive--------------------------------*/
     
     @media only screen and (max-width: 768px){
 
@@ -173,36 +177,37 @@ input[type="submit"]:active
         {
             align-items: center;
             background: linear-gradient(20deg, #f13709, #dadada, #8709ee );
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             height: .66rem;
-            min-height: 100vh;
+            min-height: 40rem;
             justify-content: center ;
             display: flex;
-
         }
+       
         .box
         {
             height: 29.4rem;
             position: relative;
-            width: 20.75rem;
-            background: #38353300;
-            
+            width: 21.75rem;
+            background: #38353300; 
         }
-        
         .header{
             position: relative;
-            width: 0rem;
-            height: 36.875rem;
+            height: 36.875rem; 
+            width: 1vw;
             text-align: center;
         }
         .header h1{
             text-align: center;
             font-size: 2.5rem;
             color: #f13809;
+            width: 20rem;
         }
         .title-box
         {
             
-            width: .0625rem;
+            width: 1vw;
             height: 0rem;
         }
         .title-box img
@@ -212,18 +217,18 @@ input[type="submit"]:active
         }
         .title-box p {
             height: .0623rem;
-            width: 18.125rem;
+            width: 80vw;
             color: #000;
             font-size: 1.19rem;
-            font-weight: .0623rem;
-            line-height: 1.88rem;
+            font-weight: 1vw;
+           line-height: 1.88rem; 
         }
         
         form
         {
             position: absolute;
-            inset: .0623rem;
-            width: 20.375rem;
+            inset: .0125rem;
+            width: 15.375rem;
             height: 31.88rem;
             border-radius: 3.125rem 3.125rem;
             background: #f3dcdc00;
@@ -237,35 +242,36 @@ input[type="submit"]:active
         {
             color: #f56f16;
             font-size: 2.1rem;
-            font-weight: 31.25rem;
+            font-weight: 31.25rem; 
             text-align: left;
         }
         
         .inputBox
         {
             position: relative;
-            width: 40vw;
+            width: 80vw;
             margin-top: 2.125rem;
         
         }
-        
+         
         .inputBox input
         {
+            
             position: relative;
-            width: 30vw;
-            padding: 1.25rem .625rem .625rem;
+            height: 3rem;
+            width: 50vw;
+            padding: .25rem .625rem .625rem;
             background: transparent;
             border: none;
             outline: none;
-            color: #23242a;
+            color: #000000;
             font-size: 1em;
             letter-spacing: 0.05em;
             z-index: 10;
         }
-        
         input[type="submit"]
         {
-            font-size: 6vw;
+            font-size: 1.125rem;
             border: none;
             outline: none;
             background:#ff6f0f;
@@ -274,6 +280,7 @@ input[type="submit"]:active
             border-radius: 6.625rem;
             font-weight: 37.5vw;
             cursor: pointer;
+            width: 50vw;
         }
         input[type="submit"]:active
         {
@@ -286,7 +293,7 @@ input[type="submit"]:active
             position: absolute;
             left: 0;
             padding: 1.25rem .625rem .625rem;
-            font-size: 1em;
+            font-size: .9em;
             color: #8d8d8d;
             pointer-events: none;
             letter-spacing: 0.5s;
@@ -303,7 +310,7 @@ input[type="submit"]:active
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 60vw;
+            width: 50vw;
             height: .25vh;
             background: #f13709;
             border-radius: .25rem;
@@ -319,7 +326,7 @@ input[type="submit"]:active
         
         .links a
         {
-            width:140vw;
+            width: 10vw;
             margin: 1.875rem 0;
             font-size: 1em;
             color: #8f8f8f;
@@ -330,24 +337,224 @@ input[type="submit"]:active
         {
             color: #f13709;
         }
-        
     }
+   
+/*----------------------Responsive-------------450-------------------*/
+    
+@media only screen and (max-width: 450px){
 
-    /*=====================responsive==========*/
-    @media only screen and (max-width: 280px){
         
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins" , sans-serif;
+    }
+    body
+    {
+        align-items: center;
+        background: linear-gradient(20deg, #f13709, #dadada, #8709ee );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: .66rem;
+        min-height: 40rem;
+        justify-content: center ;
+        display: flex;
+    }
+   
+    .box
+    {
+        height: 29.4rem;
+        position: relative;
+        width: 21.75rem;
+        background: #38353300; 
+    }
+    .header{
+        position: relative;
+        height: 36.875rem; 
+        width: 1vw;
+        text-align: center;
+    }
+    .header h1{
+        text-align: center;
+        font-size: 2.5rem;
+        color: #f13809;
+        width: 20rem;
+    }
+    .title-box
+    {
+        
+        width: 1vw;
+        height: 0rem;
+    }
+    .title-box img
+    {
+        width: .188rem;
+        margin-bottom: -.625rem;
+    }
+    .title-box p {
+        height: .0623rem;
+        width: 80vw;
+        color: #000;
+        font-size: 1.19rem;
+        font-weight: 1vw;
+       line-height: 1.88rem; 
+    }
+    
+    form
+    {
+        position: absolute;
+        inset: .0125rem;
+        width: 15.375rem;
+        height: 31.88rem;
+        border-radius: 3.125rem 3.125rem;
+        background: #f3dcdc00;
+        z-index: 10;
+        padding: 1.875rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2
+    {
+        color: #f56f16;
+        font-size: 2.1rem;
+        font-weight: 31.25rem; 
+        text-align: left;
+    }
+    
+    .inputBox
+    {
+        position: relative;
+        width: 80vw;
+        margin-top: 2.125rem;
+    
+    }
+     
+    .inputBox input
+    {
+        
+        position: relative;
+        height: 3rem;
+        width: 80vw;
+        padding: .25rem .625rem .625rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000000;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+        z-index: 10;
+    }
+    input[type="submit"]
+    {
+        font-size: 1.125rem;
+        border: none;
+        outline: none;
+        background:#ff6f0f;
+        padding: .32rem;
+        margin-top: 3.125rem;
+        border-radius: 6.625rem;
+        font-weight: 37.5vw;
+        cursor: pointer;
+        width: 80vw;
+    }
+    input[type="submit"]:active
+    {
+        background: linear-gradient(90deg,#f13809,#bc0ae9);
+        opacity: 0.8;
+    }
+    
+    .inputBox span
+    {
+        position: absolute;
+        left: 0;
+        padding: 1.25rem .625rem .625rem;
+        font-size: .9em;
+        color: #8d8d8d;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+    }
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span
+    {
+        color: #f56f16;
+        transform: translateX(-.625rem) translateY(-1.875rem);
+        font-size: 0.75em; 
+    }
+    .inputBox i
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80vw;
+        height: .25vh;
+        background: #f13709;
+        border-radius: .25rem;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+    .links
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .links a
+    {
+        width: 10vw;
+        margin: 1.875rem 0;
+        font-size: 1em;
+        color: #202020;
+        text-decoration: #202020;
+    }
+    .links a:hover,
+    .links a:nth-child(2)
+    {
+        color: #f13709;
+    }
+}
+
+    /*=====================responsive==280===Fold=====================*/
+    @media only screen and (max-width: 280px){
+        .header{
+            position: relative;
+            height: 36.875rem; 
+            width: 1vw;
+
+            text-align: center;
+        }
+        .header h1{
+            text-align: center;
+            font-size: 2.5rem;
+            color: #f13809;
+            width: 17rem;
+        }
+        .inputBox input
+        {
+            position: relative;
+            height: 3rem;
+            width: 80vw;
+            padding: .25rem .625rem .625rem;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #000000;
+            font-size: .9em;
+            letter-spacing: 0.05em;
+            z-index: 10;
+        }
         .inputBox span
         {
             position: absolute;
             left: 0;
             padding: 1.25rem .625rem .625rem;
-            font-size: 4vw;
-            color: #8d8d8d;
+            font-size: .9em;
+            color: #424242;
             pointer-events: none;
             letter-spacing: 0.5s;
         }
-
-        
         form
         {
             position: absolute;
@@ -361,12 +568,30 @@ input[type="submit"]:active
             display: flex;
             flex-direction: column;
         }
-        .title-box p {
-            height: .0623rem;
-            width: 18.125rem;
-            color: #000;
-            font-size: 5vw;
-            font-weight: .0623vw;
-            line-height: 1.88rem;
+        .inputBox i
+        {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80vw;
+            height: .25vh;
+            background: #f13709;
+            border-radius: .25rem;
+            transition: 0.5s;
+            pointer-events: none;
+            z-index: 9;
+        }
+        input[type="submit"]
+        {
+            font-size: 1.125rem;
+            border: none;
+            outline: none;
+            background:#ff6f0f;
+            padding: .32rem;
+            margin-top: 3.125rem;
+            border-radius: 6.625rem;
+            font-weight: 37.5vw;
+            cursor: pointer;
+            width: 80vw;
         }
     }
