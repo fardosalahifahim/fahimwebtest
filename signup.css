@@ -1,5 +1,6 @@
 
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,14 +11,14 @@ body
     display: flex;
     justify-content: center ;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70rem;
     background: #e7e5e3; 
 }
 .box
 {
     position: relative;
     width: 25rem;
-    height: 28.125rem;
+    height: 60rem;
     background: #0957e700;
     border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
@@ -46,7 +47,7 @@ body
     height: .0625rem;
     width: 18.75rem;
     color: #000;
-    font-size: 1.19rme;
+    font-size: .19rem;
     font-weight: .0625rem;
     line-height: 1.88rem;
 }
@@ -70,6 +71,7 @@ form
 }
 .box h2
 {
+    height: 4vh;
     color: #8d14f0;
     font-size: 2.07rem;
     font-weight: 31.25rem;
@@ -105,10 +107,10 @@ form
    
 }
 .inputBox-gender select{
-    width: 100%;
+    width: 100rem;
     height: 2.5rem;
     padding: .625rem 4.375rem .0625rem;
-    font-size: 1.19rem;
+    font-size: 1.25rem;
     position: relative;
     width: 17.25rem;
     background: transparent;
@@ -147,11 +149,15 @@ input[type="submit"]
     border: none;
     outline: none;
     background:#ff6f0f;
-    padding: 5px;
+    padding: .32rem;
     margin-top: 2.5rem;
     border-radius: 5.625rem;
     font-weight: 37.5rem;
     cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: linear-gradient(90deg,#f13809,#bc0ae9);
+    opacity: 0.8;
 }
 input[type="submit"]:active
 {
@@ -212,7 +218,7 @@ input[type="submit"]:active
     outline: none;
     background:#cf0fff;
     padding: .625rem;    
-    border-radius: 2.5rem;
+    border-radius: .7rem;
     background: linear-gradient(90deg,#0975f1,#bc0ae9);
     opacity: 0.8;
 
@@ -230,9 +236,10 @@ input[type="submit"]:active
 
 
 
-/*==============Responsive===================*/
+/*==============Responsive===500================*/
 
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 500px){
 
         
     *{
@@ -244,16 +251,17 @@ input[type="submit"]:active
     body
     {
         align-items: center;
-        /* background-image: url("/Assets/images/bag\ \(1\).jpg"); */
-        background: linear-gradient(30deg, #cf0fff,#f13809, #f9f9fa, #0975f1 );
+        background: linear-gradient(30deg, #cf0fff,#f1370977, #f9f9fa, #0975f1 );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         height: 5.066rem;
-        min-height: 253vw;
+        min-height: 5rem;
         justify-content: top ;
         display: flex;
     }
     .box
     {
-        height: 40rem;
+        height: 60px;
         position: relative;
         width: 60;
         background: #df600c00;
@@ -277,7 +285,7 @@ input[type="submit"]:active
     {
         position: absolute;
         inset: .0623rem;
-        width: 60vw;
+        width: 90vw;
         height: 20.88rem;
         border-radius: 3.125rem 3.125rem;
         background: #f3dcdc00;
@@ -296,7 +304,7 @@ input[type="submit"]:active
     .inputBox
     {
         position: relative;
-        width: 60vw;
+        width: 80vw;
         margin-top: 2.125rem;
     
     }
@@ -310,65 +318,70 @@ input[type="submit"]:active
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 60vw;
-        height: .125rem;
+        width: 80vw;
+        height: 0.3vh;
         background: #f13709;
         border-radius: .25rem;
         transition: 0.5s;
         pointer-events: none;
         z-index: 9;
     }
+    
     .inputBox-gender span{
         position: absolute;
         left: 0;
-        padding: 14px .625rem .625rem;
-        font-size: 1rem;
+        padding: 1.125rem .125rem .625rem;
+        font-size: .9rem;
         color: #6d6c6c;
         pointer-events: none;
         letter-spacing: 0.5s;
         color: #000000ec;
        
     }
+    
     .inputBox-gender select{
-        width: 60vw;
-        height: 5vh;
-        padding: .625rem 70px .0625rem;
-        font-size: 1.19rem;
+      
+        height: 6vh;
+        padding: .625rem 4.025rem .0625rem;
+        font-size: 1.25rem;
         position: relative;
-        width: 60vw;
+        width: 80vw;
         background: transparent;
         border: none;
         outline: none;
         color: #0f0f0f;
-        font-size: 4vw;
+        font-size: .9rem;
         letter-spacing: 0.05em;
         z-index: 10;
+    }
+    
+    .inputBox-gender select option{
+        color: #f14b09;
         
-       
     }
     .inputBox input
     {
         position: relative;
-        width: 60vw;
+        width: 80vw;
         padding: 1.25rem .625rem .625rem;
         background: transparent;
         border: none;
         outline: none;
         color: #23242a;
-        font-size: 1em;
+        font-size: .9em;
         letter-spacing: 0.05em;
         z-index: 10;
     }
     input[type="submit"]
     {
-        font-size: 7vw;
+        font-size: 1.4rem;
         border: none;
         outline: none;
         background:#ff6f0f;
-        padding: .32rem;
+        padding: .2rem;
         margin-top: 3.125rem;
         border-radius: 6.625rem;
-        font-weight: 500vw;
+        font-weight: 1rem;
         cursor: pointer;
     }
     input[type="submit"]:active
@@ -389,7 +402,7 @@ input[type="submit"]:active
     .inputBox input:valid ~ span,
     .inputBox input:focus ~ span
     {
-        color: #f56f16;
+        color: #f37208;
         transform: translateX(-.625rem) translateY(-1.875rem);
         font-size: 0.75em; 
     }
@@ -398,7 +411,7 @@ input[type="submit"]:active
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 60vw;
+        width: 80vw;
         height: .30vh;
         background: #f13709;
         border-radius: .25rem;
@@ -423,10 +436,361 @@ input[type="submit"]:active
     .links a:hover,
     .links a:nth-child(2)
     {
-        color: #f13709;
+        color: #000000;
     }
     .links p{
         height: 1vh;
         width: 140vw;
+        color: #000000;
     }
+}
+
+/*================Fold=Responsive========*/
+
+@media only screen and (max-width: 290px){
+         
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins" , sans-serif;
+    }
+    body
+    {
+        align-items: center;
+        background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 5.066rem;
+        min-height: 5rem;
+        justify-content: top ;
+        display: flex;
+    }
+    .box
+    {
+        
+        position: relative;
+        width: 60;
+        background: #df600c00;
+        
+    }
+     h1{
+        color: #f73e10;
+       
+    }.box h2
+    {
+        height: 4vh;
+        color: #8d14f0;
+        font-size: 2.07rem;
+        font-weight: 31.25rem;
+        text-align: left;
+    }
+    .header{
+        position: relative;
+        width: 60;
+        
+    }
+    .header h1{
+        text-align: center;
+        font-size: 5rem;
+        color: #f13809;
+    } 
+    form
+    {
+        position: absolute;
+        inset: .0623rem;
+        width: 90vw;
+        height: 20.88rem;
+        border-radius: 3.125rem 3.125rem;
+        background: #f3dcdc00;
+        z-index: 10;
+        padding: 1.875rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    h2
+    {
+        color: #f56f16;
+        font-size: 40vw;
+        font-weight: 31.25rem;
+        text-align: left;
+    }
+    .inputBox
+    {
+        position: relative;
+        width: 80vw;
+        margin-top: 2.125rem;
+        font-size: .9rem;
+    
+    }
+    
+    .inputBox-gender{
+        position: relative;
+        width: 60vw;
+        margin-top: 2.1875rem;
+        font-size: .9rem;
+    }
+    .inputBox-gender i
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80vw;
+        height: .125rem;
+        background: #f13709;
+        border-radius: .25rem;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+     
+    
+    
+    .inputBox-gender span{
+        position: absolute;
+        left: 0;
+        padding: 1rem .625rem .625rem;
+        font-size: .8rem;
+        color: #6d6c6c;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+        color: #000000ec;
+        font-size: .9rem;
+       
+    }
+    
+    .inputBox-gender select{
+       
+        
+        padding: .5rem 4rem .125rem;
+        font-size: .125rem;
+        position: relative;
+        width: 80vw;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000000;
+        font-size: .9rem;
+        letter-spacing: 0.05em;
+        z-index: 10;
+       
+    }
+    
+    .inputBox input
+    {
+        position: relative;
+        width: 80vw;
+        padding: 1.25rem .625rem .625rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #23242a;
+        font-size: .9em;
+        letter-spacing: 0.05em;
+        z-index: 10;
+        
+    }
+    input[type="submit"]
+    {
+        font-size: 7vw;
+        border: none;
+        outline: none;
+        background:#ff6f0f;
+        padding: .32rem;
+        margin-top: 3.125rem;
+        border-radius: 6.625rem;
+        font-weight: 500vw;
+        cursor: pointer;
+    }
+    input[type="submit"]:active
+    {
+        background: linear-gradient(90deg,#f13809,#bc0ae9);
+        opacity: 0.8;
+    }
+    .inputBox span
+    {
+        position: absolute;
+        left: 0;
+        padding: 1.25rem .625rem .625rem;
+        font-size: medium;
+        color: #222121;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+    }
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span
+    {
+        color: #f56f16;
+        transform: translateX(-.625rem) translateY(-1.875rem);
+        font-size: 0.75em; 
+    }
+    .inputBox i
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80vw;
+        height: .20vh;
+        background: #f13709;
+        border-radius: .25rem;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 9;
+    }
+    .links
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .links a
+    {
+        width: 60vw;
+        
+        font-size: 1em;
+        color: #0f0e0e;
+        text-decoration: #7e7c7c;
+    }
+    .links a:hover,
+    .links a:nth-child(2)
+    {
+        color: #080302;
+    }
+    .links p{
+        height: 1vh;
+        width: 30vw;
+      color: #08183a;
+    }
+}
+
+/*===================Resoinsuve-250==========*/
+
+
+@media only screen and (max-width: 250px){
+
+    .inputBox span
+    {
+        position: absolute;
+        left: 0;
+        padding: 1.25rem .625rem .625rem;
+        font-size: .7;
+        color: #222121;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+    }
+   
+    
+}
+
+/*==============================responsive=768================*/
+
+@media only screen and (max-width: 768px){
+   
+    body
+    {
+        align-items: center;
+        background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 5.066rem;
+        min-height: 5rem;
+        justify-content: top ;
+        display: flex;
+    }
+    .box
+    {
+        height: 60px;
+        position: relative;
+        min-width: 60;
+        background: #df600c00;
+        
+    }
+     h1{
+        color: #f73e10;
+       
+    }
+    .header{
+        position: relative;
+        min-width: 60;
+        
+    }
+    .header h1{
+        text-align: center;
+        font-size: 5rem;
+        color: #f13809;
+    } 
+    form
+    {
+        position: absolute;
+        inset: .0623rem;
+        min-width: 60vw;
+        height: 20.88rem;
+        border-radius: 3.125rem 3.125rem;
+        background: #f3dcdc00;
+        z-index: 10;
+        padding: 1.875rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    h2
+    {
+        color: #f56f16;
+        font-size: 40vw;
+        font-weight: 31.25rem;
+        text-align: left;
+    }
+    
+    .inputBox-gender i
+    {
+        position: absolute;
+        background: #f13709;
+        min-width: 50vw;
+    }
+    
+    .inputBox-gender select{
+      
+        position: relative;
+        min-width: 50vw;
+        color: #0f0f0f;
+        
+    }
+    
+    .inputBox-gender select option{
+        color: #f14b09;
+        
+    }
+    .inputBox{
+        min-width: 50vw;
+    }
+    .inputBox input
+    {
+        position: relative;
+        min-width: 50vw;
+        padding: 1.25rem .625rem .625rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #23242a;
+        font-size: .9em;
+        letter-spacing: 0.05em;
+        z-index: 10;
+    }
+    .inputBox span
+    {
+        position: absolute;
+        left: 0;
+        padding: 1.25rem .625rem .625rem;
+        font-size: 1em;
+        color: #222121;
+        pointer-events: none;
+        letter-spacing: 0.5s;
+    }
+    .inputBox i
+    {
+        position: absolute;
+        background: #f13709;
+      min-width: 50vw;
+      
+    }
+   
 }
