@@ -424,11 +424,11 @@ input[type="submit"]:active
         margin-bottom: -.625rem;
     }
     .title-box p {
-        width: 7rem;
+        width: 10rem;
         height: .0623rem;
         color: #000;
-        font-size: .7rem;
-        line-height: .7rem; 
+        font-size: .9rem;
+        line-height: .9rem; 
 
     }
     
@@ -621,6 +621,15 @@ input[type="submit"]:active
             pointer-events: none;
             z-index: 9;
         }
+        .title-box p {
+            margin-top: 1rem;
+            width: 10rem;
+            height: .0623rem;
+            color: #000;
+            font-size: .9rem;
+            line-height: .9rem; 
+    
+        }
         input[type="submit"]
         {
             font-size: 1.125rem;
@@ -635,15 +644,30 @@ input[type="submit"]:active
             width: 80vw;
         }
     .links2{
+        width: 11rem;
         display: flex;
         justify-content: space-between;
     
     }
     .links2 a{
         margin: 1rem;
+        width: 11rem;
         font-size: 0.9rem;
         color: #8f8f8f;
         text-decoration: #8f8f8f;
+    }
+    .links{
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .links a{
+        margin: .5rem;
+        width: 10rem;
+        height: .0623rem;
+        color: #8f8f8f;
+        font-size: .9rem;
     }
         
     }
