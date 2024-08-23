@@ -1,252 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Actdoor | porfile</title>
-    <!------------------------CSSlink---------------->
-    <link rel="stylesheet" type="text/css" href="Assets/profile.css">
-
-    <!-------swiper slider link----->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actdoor | Profile</title>
+    <!-- Font Awesome -->
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+   
+    <!-- CSS -->
 
-
-</head>
-<body>
-    <!-------------start--navbar------------>
+  <link rel="stylesheet" href="/profile.css">
+    
+  <!---------------------------------------------------------------------------------------------------------->
+      <!-------------start--navbar------------>
  <nav>
-    <div class="container nav-container">
-        <div class="logo">
-            <h3>Actdoor</h3>
-        </div>
-        <div class="serch-bar">
-        <i class="fa fa-serch"></i>
-        <input type="search" placeholder="search for creators">
-        </div>
-        <div class="add-post">
-            <label for="add-post" class="btn btn-primary">add post</label>
-            <div class="profile-picture" id="my-profile-picturre">
-                <img src="./img/user.jpeg" alt="">
-            </div>
-        </div>
-    </div>
+  <div class="container nav-container">
+      <div class="logo">
+          <h3>Actdoor</h3>
+      </div>
+      <div class="serch-bar">
+      <i class="fa fa-serch"></i>
+      <input type="search" placeholder="search for creators">
+      </div>
+      <div class="add-post">
+          <label for="add-post" class="btn btn-primary">add post</label>
+          <div class="profile-picture" id="my-profile-picturre">
+              <img src="./img/user.jpeg" alt="">
+          </div>
+      </div>
+  </div>
 </nav>
-        <!------------start--navbar------------>
 
+   <!------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="/profile.css" />
+  </head>
+  <body>
+    <div class="header__wrapper">
+      <header></header>
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <img src="img/user.jpeg" alt="Anna Smith" />
+            <span></span>
+          </div>
+          <h2>Anna Smith</h2>
+          <p>UX/UI Designer</p>
+          <p>anna@example.com</p>
 
-         <!------------start main section------------->
-         <main>
-            <div class="container main-container">
-          <!---=========main left start===================-->
-                <div class="main-left">
-                    <!---................--profile.start..................-->
-                    <a class="profile">
-                        <div class="profile-picture" id="my-profile-picturre">
-                            <img src="./img/user.jpeg" alt="">
-                        </div>
-                        <div class="progile-handle">
-                            <h4>Beg Joker</h4>
-                            <p class="text-gray">
-                                @thebegjoker
-                            </p>
-                        </div>
-                    </a>
-                      <!--..............--profile.End...............-->
+          <ul class="about">
+            <li><span>4,073</span>Followers</li>
+            <li><span>322</span>Following</li>
+            <li><span>200,543</span>Attraction</li>
+          </ul>
 
-
-                    <!---...........Start---Aside bar.................-->
-                    <aside>
-                        <a  class="menu-item active">
-                            <span><img src="./Assets/images/icons/home.png" alt=""></span><h3>Home</h3>
-                        </a>
-
-                        <a  class="menu-item">
-                            <span><img src="./Assets/images/icons/explore.png" alt=""></span><h3>Explore</h3>
-                        </a>
-
-                        <a  class="menu-item">
-                            <span><img src="./Assets/images/icons/notification.png" alt=""></span>
-                            <small class="notfy-counter">7+</small>
-                            <h3>Notification</h3>
-                            <!---..............Notification.star...............-->
-                            <div class="notification-box">
-                                <div>
-                                     <div class="profile-picture">
-                                        <img src="./Assets/images/img/user.jpeg" alt="">
-                                    </div>
-                                    <div class="notification-body">
-                                        <b>jeniya</b>accepted your friend riquest
-                                        <small class="text-gry"></small>
-                                    </div>
-                                </div>
-                               
-                                <div>
-                                    <div class="profile-picture">
-                                       <img src="./Assets/images/img/user.jpeg" alt="">
-                                   </div>
-                                   <div class="notification-body">
-                                       <b>jeniya</b>accepted your friend riquest
-                                       <small class="text-gry"></small>
-                                   </div>
-                               </div>
-
-                               <div>
-                                <div class="profile-picture">
-                                   <img src="./Assets/images/img/user.jpeg" alt="">
-                               </div>
-                               <div class="notification-body">
-                                   <b>jeniya</b>accepted your friend riquest
-                                   <small class="text-gry"></small>
-                               </div>
-                           </div>
-
-                           <div>
-                            <div class="profile-picture">
-                               <img src="./Assets/images/img/user.jpeg" alt="">
-                           </div>
-                           <div class="notification-body">
-                               <b>jeniya</b>accepted your friend riquest
-                               <small class="text-gry"></small>
-                           </div>
-                       </div>
-                            </div>
-                            <!---.................notification..end...............-->
-                        </a>
-
-                        <a class="menu-item">
-                            <span><img src="./Assets/images/icons/message.png" alt=""></span>
-                            <small class="notfy-counter">3+</small>
-                            <h3>Massage</h3>
-                        </a>
-
-                        <a  class="menu-item">
-                            <span><img src="./Assets/images/icons/book-mark.png" alt=""></span><h3>Book marks</h3>
-                        </a>
-
-                        <a  class="menu-item">
-                            <span><img src="./Assets/images/icons/analytics.png" alt=""></span><h3>Analytics</h3>
-                        </a>
-
-                        <a class="menu-item">
-                            <span><img src="./Assets/images/icons/theme.png" alt=""></span><h3>Theme</h3>
-                        </a>
-
-                        <a class="menu-item">
-                            <span><img src="./Assets/images/icons/settings.png" alt=""></span><h3>Settings</h3>
-                        </a>
-                        <!-----...................add-post-btn...........-->
-                        <label for="add-post" class="btn btn-primary btn-lg">Create A Post</label>
-
-                    </aside>
-
-                    <!---............End---Aside bar.................-->
-
-
-                </div>
-          <!--=============----main left end---===========---->
-
-
-          <!----==============-main middle start--==========--->
-                   <div class="main-middle">
-                    <!--.............start stories........-->
-                    <div class="stories">
-                        <div class="stories-wrappper">
-                        <div class="story">
-                            <img src="">
-                            <div class="profile-picture" id="my-profile-picturre" >
-                                <img src="./Assets/images/img/user.jpeg" alt="">
-                            </div>
-                              <div class="add-story">
-                               <i class="fa fa-add">
-                                
-                               </i>
-                               <p>Add your story</p>
-                            </div>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/user1.jpg" alt="">
-                            <div class="profile-picture" >
-                                <img src="./Assets/images/img/user1.jpg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>Jeniya</p>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/user2.jpg" alt="">
-                            <div class="profile-picture">
-                                <img src="./Assets/images/img/user2.jpg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>Nahar</p>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/user3.jpg" alt="">
-                            <div class="profile-picture" >
-                                <img src="./Assets/images/img/user3.jpg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>Rafid</p>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/user4.jpg" alt="">
-                            <div class="profile-picture" id="my-profile-picturre">
-                                <img src="./Assets/images/img/user4.jpg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>rahat</p>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/bg.jpeg" alt="">
-                            <div class="profile-picture">
-                                <img src="./Assets/images/img/bg.jpeg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>Riyan</p>
-                        </div>
-
-                        <div class="story">
-                            <img src="./Assets/images/img/bg.jpeg" alt="">
-                            <div class="profile-picture">
-                                <img src="./Assets/images/img/bg.jpeg" alt="">
-                            </div>
-                            <small><i class="fa fa-add"></i></small>
-                            <p>Riyan</p>
-                        </div>
-                        </div>
-                    </div>
-                   <!--................end stories........-->
-
-                   <!--.....................post input...............-->
-                   <form class="add-post">
-                    <div class="profile-picture" id="my-profile-picturre">
-                        <img src="./Assets/images/img/mountain.jpg" alt="">
-                    </div>
-                    <input type="text" placeholder="what's on your mind?" id="add-post">
-                    <input type="submit" value="post" class="btn btn-primary">
-                     
-                   </form>
-                   </div>
-           <!----=============-main middle end---==========--->
+          <!--------------pest-start------------------------->
           
+          <div class="right__col">
+            <nav1>
+              <ul>
+                <li><a href="">photos</a></li>
+                <li><a href="">galleries</a></li>
+                <li><a href="">groups</a></li>
+                <li><a href="">about</a></li>
+              </ul>
+              <button>Follow</button>
+            </nav1>
+          </div>
+        
+          <!-----------------pest-end------------------->
 
-           <!-----=========----main right start---=========--->
-                <div class="main-right">
-                    Lorem ipsum dolor sit amet consectetur.
-                </div>
-           <!---==============-main right end----==========--->
-            </div>
-         </main>
-          <!-----------start main section------------>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+              erat volutpat. Morbi imperdiet, mauris ac auctor dictum, nisl
+              ligula egestas nulla.
+          </div>
+        </div>
+        <div class="right__col">
+            <!-------------------------Cut-start----------------------->
+             <!-------------------------cut-end----------------------->
 
-          <!--------------------castom js link-------->
-
-</body>
+          <div class="photos">
+            <img src="img/img_1.avif" alt="Photo" />
+            <img src="img/img_2.avif" alt="Photo" />
+            <img src="img/img_3.avif" alt="Photo" />
+            <img src="img/img_4.avif" alt="Photo" />
+            <img src="img/img_5.avif" alt="Photo" />
+            <img src="img/img_6.avif" alt="Photo" />
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </body>
 </html>
