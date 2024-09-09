@@ -227,7 +227,7 @@ input[type="submit"]:active
     font-size: .125rem;
     width: 18.75rem;
     margin: 1.88rem ;
-    color: #ff4800;
+    color: #000000;
     font-size: 1em;
 }
 
@@ -251,7 +251,8 @@ input[type="submit"]:active
     body
     {
         align-items: center;
-        background: linear-gradient(30deg, #cf0fff,#f1370977, #f9f9fa, #0975f1 );
+        background-image: url("img/background2.png");
+       /* background: linear-gradient(30deg, #cf0fff,#f1370977, #f9f9fa, #0975f1 ); */
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 5.066rem;
@@ -458,7 +459,8 @@ input[type="submit"]:active
     body
     {
         align-items: center;
-        background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );
+        background-image: url("img/background2.png");
+      /*  background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );   */
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 5.066rem;
@@ -659,7 +661,7 @@ input[type="submit"]:active
     .links p{
         height: 1vh;
         width: 30vw;
-      color: #08183a;
+      color: #000;
     }
 }
 
@@ -689,7 +691,8 @@ input[type="submit"]:active
     body
     {
         align-items: center;
-        background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );
+        background-image: url("img/background2.png");
+       /* background: linear-gradient(30deg, #cf0fff,#f13709b7, #f9f9fa, #0975f1 );  */
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 5.066rem;
